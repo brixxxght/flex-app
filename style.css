@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* padding: 5rem 0rem; */
+}
+
+h2 {font-size: 1.5rem;}
+h3 {font-size: 2rem;}
+ 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    min-width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    border: none;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(136, 122, 197);
+    color: aliceblue;
+    transition: all 400ms ease;
+}
+
+
+.btn:active {
+    transform: translateY(5px)
+}
+/* ====================== APP STYLES ======================== */
+.app {
+    background: #2c2c2c;
+    max-width: 40rem;
+    height: 80%;
+    border-radius: 5px;
+    /* margin: 0 auto; */
+    font-size: 2rem;
+    padding: 4rem 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ====================== INPUT STYLES ======================== */
+form, div:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+label {
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* ====================== TIP-AMOUNT STYLES ======================== */
+.tip-amount {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    background:#414141;
+    border-radius: .5rem;
+    border: 2px solid transparent;
+    transition: all 400ms ease;
+}
+
+.focus {
+    border: 2px solid rgb(136, 122, 197);
+}
+
+.tip-amount:hover {
+    border: 2px solid rgb(136, 122, 197);
+}
+
+/* .tip-amount:active {
+    border: 2px solid rgb(136, 122, 197);
+} */
+
+.tip-amount span {
+    color: aliceblue;
+    font-weight: bold;
+    /* padding: 1rem 1rem; */
+
+}
+
+.tip-amount input {
+    background: transparent;
+    border: none;;
+    height: 100%;
+    font-size: 2rem;
+    color: rgb(160, 166, 171);
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer h2 {
+    margin-bottom: 1.5rem;
+}
+
+.fly {
+    animation-name: flyup;
+    animation-duration: 700ms;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    display: block;
+    transform: translateY(2rem);
+}
+
+
+.controls {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 15rem;
+    gap: 2rem;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    user-select: none;
+}
+
+.controls .tippers {
+    display: block;
+    padding: 1rem;
+}
+
+@keyframes flyup {
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.5;
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

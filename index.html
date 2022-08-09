@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a simple tipping application with javascript">
+    <meta name="author" content="Bright Green">
+    <title>Flex</title>
+
+    <!-- ==================== CSS LINK =================== -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ==================== GOOGLE FONT =================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+
+
+</head>
+<body>
+    <main>
+        <div class="app">
+            <form action="#">
+                <div class="input-box">
+                    <label for="tip-input">Bill</label>
+                    <div class="tip-amount">
+                        <span class="currency">$</span>
+                        <input type="text" id="tip-input" placeholder="0" autofocus="true" value="0.0">
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="tip-input">save</label>
+                    <div class="tip-amount">
+                        <span class="symbol">$</span>
+                        <input type="text" id="tip-amount" disabled>
+                    </div>
+                </div>
+            </form>
+            
+
+            <footer class="footer">
+                <div class="left">
+                    <h2>Friends</h2>
+                    <div class="controls flex">
+                        <button type="button" class="btn increase-tippers">+</button>
+                        <span class="tippers">1</span>
+                        <button type="button" class="btn decrease-tippers">-</button>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h2>Bill/Friend</h2>
+                    <h3 class="total-bill">
+                        <span class="currency">$</span>
+                        0.00
+                    </h3>
+                </div>
+
+            </footer>
+            <h1 style="text-align: center; color: #fff;">flex
+                <p style="font-size: 1rem;">by: chi</p>
+            </h1>
+        </div>
+    </main>
+    <script src="./app.js" defer></script>
+</body>
+</html>
